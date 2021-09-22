@@ -2,40 +2,71 @@ body {
     background-color: black;
 }
 
+/*navigation menu*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    border-right: 2px solid white;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.banner {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    max-height:200px;
+}
+
 h1 {
     font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
     color:white;
-}
+} 
 
 p {
-    padding: 25px 25px;
-    margin-left: 100px;
-    margin-right: 100px;
     display: block;
     color: white;
     text-align: center;
-    font-size: x-large;
+    font-size: larger;
     font-family:'Courier New', Courier, monospace;
 }
 
-nav {
-    background-color: black;
-    position: fixed;
-}
-
-.nav-item {
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px 10px;
-    color : white;
-    text-decoration: none;
-}
-
-.nav-item:hover {
-    background-color: gray;
+.text {
+    max-width: 100%;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .hyperlink {
@@ -44,19 +75,11 @@ nav {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.centered-image {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+/* Collection Styling */
 
 .collection-image {
-    display: block;
     height: 100px;
     width: 100px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 100px;
 }
 
@@ -73,11 +96,37 @@ nav {
     border-style: solid;
 }
 
+.collection {
+    max-width:max-content;
+    height:fit-content;
+    border: auto;
+    padding: auto;
+    margin: auto;
+}
+
+ .column {
+    float: left;
+    width: 100px;
+    border:auto;
+    margin: auto;
+    padding: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+/* Meet the team styling */
+
 .team {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 500px;
-    padding-right:500px;
+    max-width: max-content;
+    border: auto;
+    padding: auto;
+    margin: auto;
 }
 
 .team-title {
@@ -89,20 +138,35 @@ nav {
 }
 
 .team-text {
-    padding-left: 110px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
+    float: right;
 }
 
 .team-image {
     display: block;
-    height: 100px;
-    width: 100px;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    padding: 2px;
+    border-width: 2px;
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
     float: left;
 }
 
+  .team-column {
+      float: left;
+      width: 50%;
+      border: auto;
+      margin: auto;
+      padding: auto;
+  }
 
+  .team-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

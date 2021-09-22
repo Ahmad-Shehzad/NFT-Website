@@ -7,97 +7,119 @@
     </head>
 
     <body>
-        <nav>
-            <a href = "#about" class = "nav-item">About</a>
-            <a href = "#collections" class = "nav-item">Collections</a>
-            <a href = "#buy" class = "nav-item">How to Buy</a>
-            <a href = "#team" class = "nav-item">Team</a>
-        </nav>
+        <ul>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#collections">Collections</a></li>
+            <li><a href = "#buy">How To Buy</a></li>
+            <li><a href = "#team">Team</a></li>
+        </ul>
 
-        <img src = "assets/Banner.JPG" class = "centered-image"/>
+        <img src = "assets/Banner.JPG" class = "banner"/>
         
         <hr id = "about"/>
         <h1>About Us</h1>
         <hr/>
-        <p>Welcome to iime. We are digital artists that create unique and exciting collections of NFTs, available on 
-            <a href = "https://opensea.io/iime" class = "hyperlink">Opensea</a>.
-            These collections are incredibly diverse and ground breaking. We started with the Spud Club, which was a 10
-            piece collection of super cool spuds. Then, we went in a completely different direction and released Shapestract,
-            a collection of 10,000 abstract pieces. This collection yielded our very first sale, #00016. Most recently, we have
-            launched our most exciting collection to date, Sheep Shop. This flock of sheep were abandoned by their farmer, and we 
-            are desperately trying to find them new homes, quite a task when there are 10,000 of them. We look forward to bringing 
-            you more collections as soon as December.
-        </p>
+        <div class = "text">
+            <p>Welcome to iime. We are digital artists that create unique and exciting collections of NFTs, available on 
+                <a href = "https://opensea.io/iime" target="_blank" class = "hyperlink">Opensea</a>.
+                These collections are incredibly diverse and ground breaking. We started with the Spud Club, which was a 10
+                piece collection of super cool spuds. Then, we went in a completely different direction and released Shapestract,
+                a collection of 10,000 abstract pieces. This collection yielded our very first sale, #00016. Most recently, we have
+                launched our most exciting collection to date, Sheep Shop. This flock of sheep were abandoned by their farmer, and we 
+                are desperately trying to find them new homes, quite a task when there are 10,000 of them. We look forward to bringing 
+                you more collections as soon as December.
+            </p>
+        </div>
 
         <hr id = "collections"/>
         <h1>Collections</h1>
         <hr/>
-        <div class="container">
-            <a href = "https://opensea.io/collection/sheep-shop">
-                <img src = "assets/Sheep.jpg" class = "collection-image"/>
-            </a>
-            <div class = "collection-text">Sheep Shop</div>
+        <div class = "collection">
+            <div class = "row">
+                <div class = "column">
+                    <a href = "https://opensea.io/collection/sheep-shop" target="_blank">
+                        <img src = "assets/Sheep.jpg" class = "collection-image"/>
+                    </a>
+                    <div class = "collection-text">Sheep Shop</div>
+                </div>
+                
+                <div class = "column">
+                    <a href = "https://opensea.io/collection/shapestract" target="_blank">
+                        <img src = "assets/Shapes.JPG" class="collection-image">
+                    </a>
+                    <div class = "collection-text">Shapestract</div>
+                </div>
+                
+                <div class = "column">
+                    <a href ="https://opensea.io/collection/spudclub" target="_blank">
+                        <img src = "assets/Spud.JPG" class = "collection-image"/>
+                    </a>
+                    <div class = "collection-text">Spud Club</div>
+                </div>
+            </div>
         </div>
-        <div class = "container">
-            <a href = "https://opensea.io/collection/shapestract">
-                <img src = "assets/Shapes.JPG" class="collection-image">
-            </a>
-            <div class = "collection-text">Shapestract</div>
-        </div>
-        <div class = "container">
-            <a href ="https://opensea.io/collection/spudclub">
-                <img src = "assets/Spud.JPG" class = "collection-image"/>
-            </a>
-            <div class = "collection-text">Spud Club</div>
-        </div>
-
+        
         <hr id = "buy"/>
         <h1>How to Buy</h1>
         <hr/>
-        <p>You can purchase one of our NFTs by either clicking the link to our <a href = "https://opensea.io/iime" class = "hyperlink">Opensea</a>
-            account or by clicking on one of the collections above, taking you straight to the relevant 
-            collection.Our NFTs are sold on the Polygon blockchain, this means there are no gas fees for 
-            you to pay, just the cost of the NFT. You may wonder, "Why not use the Ethereum Blockchain?", 
-            well besides the expense of gas fees, using the Ethereum blockchain has a big impact on our 
-            carbon footprint hence, we opt to use Polygon.
-        </p>
+        <div class = "text">
+            <p>You can purchase one of our NFTs by either clicking the link to our 
+                <a href = "https://opensea.io/iime" target="_blank" class = "hyperlink">Opensea</a>
+                account or by clicking on one of the collections above, taking you straight to the relevant 
+                collection.Our NFTs are sold on the Polygon blockchain, this means there are no gas fees for 
+                you to pay, just the cost of the NFT. You may wonder, "Why not use the Ethereum Blockchain?", 
+                well besides the expense of gas fees, using the Ethereum blockchain has a big impact on our 
+                carbon footprint hence, we opt to use Polygon.
+            </p>
+        </div>
 
         <hr id = "team"/>
         <h1>Meet the Team</h1>
         <hr/>
-        <div class = "team">
-            <img src = "assets/Shrimp.jpg" class = "team-image"/>
-            <div class = "team-title">Shrimp</div>
-            <div class = "team-text">Shrimp is one of our Creative Directors and currently lead Artist, Shrimp loves 
-                to draw and is responsible for some of our most notable collections including Spud Club and Sheep Shop.
-                And just as an FYI, she is called Shrimp because she is small.
-            </div>
-        </div>
 
         <div class = "team">
-            <img src = "assets/Pie.jpg" class = "team-image"/>
-            <div class = "team-title">Pi</div>
-            <div class = "team-text">Pi is another one of our Creative Directors with aspirations of becoming one of
-                our artists. The one thing about Pi is, she never stops coming up with ideas and constructive critiscims. 
-                Pi is responsible for names like Shapestract and Sheep Shop.
-            </div>
-        </div>
+            <div class = "team-row">
+                <div class = "team-column">
+                    <img src = "assets/Shrimp.jpg" class = "team-image" />
+                    <br/>
+                    <div class = "team-title">Shrimp</div>
+                    <div class = "team-text">Shrimp is one of our Creative Directors and currently lead Artist, Shrimp loves 
+                        to draw and is responsible for some of our most notable collections including Spud Club and Sheep Shop.
+                        And just as an FYI, she is called Shrimp because she is small.
+                    </div>
+                </div>
 
-        <div class = "team">
-            <img src = "assets/Badger.jpg" class = "team-image"/>
-            <div class = "team-title">Badger Boi</div>
-            <div class = "team-text">Badger Boi is our Social Media Manager as well as a Creative Director and Artist, 
-                Badger Boi has been integral in growing our social following via Instagram and Twitter. Badger Boi is 
-                relentless with the posts, and took our following from nothing to what it is today.
+                <div class = "team-column">
+                    <img src = "assets/Pie.jpg" class = "team-image"/>
+                    <br/>
+                    <div class = "team-title">Pi</div>
+                    <div class = "team-text">Pi is another one of our Creative Directors with aspirations of becoming one of
+                        our artists. The one thing about Pi is, she never stops coming up with ideas and constructive critiscims. 
+                        Pi is responsible for names like Shapestract and Sheep Shop.
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class = "team">
-            <img src = "assets/Potato.jpg" class = "team-image"/>
-            <div class = "team-title">Potato</div>
-            <div class = "team-text">Potato is our lead programmer, responsible for creating this very website, as well 
-                as other internal tools that the organisation utilises. Potato has also dabbled in a bit of art himself,
-                 being the creator of Shapestract.
+            <div class = "team-row">
+                <div class = "team-column">
+                    <img src = "assets/Badger.jpg" class = "team-image"/>
+                    <br/>
+                    <div class = "team-title">Badger Boi</div>
+                    <div class = "team-text">Badger Boi is our Social Media Manager as well as a Creative Director and Artist, 
+                        Badger Boi has been integral in growing our social following via Instagram and Twitter. Badger Boi is 
+                        relentless with the posts, and took our following from nothing to what it is today.
+                    </div>
+                </div>
+                
+                <div class = "team-column">
+                    <img src = "assets/Potato.jpg" class = "team-image"/>
+                    <br/>
+                    <div class = "team-title">Potato</div>
+                    <div class = "team-text">Potato is our lead programmer, responsible for creating this very website, as well 
+                        as other internal tools that the organisation utilises. Potato has also dabbled in a bit of art himself,
+                         being the creator of Shapestract.
+                    </div>
+                </div>
             </div>
         </div>
 
