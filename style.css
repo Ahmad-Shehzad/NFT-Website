@@ -170,3 +170,32 @@ p {
     clear: both;
     display: table;
   }
+
+  .social {
+    max-width: max-content;
+    border: auto;
+    padding: auto;
+    margin: auto;
+    clear: both;
+  }
+
+  .social-column {
+      max-width: max-content;
+      border: auto;
+      padding: auto;
+      margin: auto;
+      float: left;
+  }
+
+  .social-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+  .social-image {
+      height:30px;
+      width: 30px;
+      padding: 5px;
+      border-radius: 50px;
+  }
